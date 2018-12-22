@@ -1,6 +1,8 @@
 # TweepyModi
 A tool to scrape tweets , specifically from PMOI's Twitter Account - Narendra Modi
-##AKASHTHEGREAT - [COMMIT 1]
+#
+
+#AKASHTHEGREAT - [COMMIT 1]
 Added the code for twitter scraping
 I am scraping twitter account with handle 'narendramodi'.[Which can be changed quite easily and accordingly]
 Also we have to hardcode the date range for this part (which we have to handle later while making the website)

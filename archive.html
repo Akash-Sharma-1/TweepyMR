@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Modi: Twitter Archive</title>
+    <title>Modi: Twitter Archive Full Archive</title>
     <link rel="shortcut icon" href="Modi.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
@@ -125,6 +125,56 @@
 .topnav .dropdown:hover .dropdown-content {
   display: block;
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #2196F3;
+  padding: 5px;
+  height: 54px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #2196F3;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 50px;
+  height: 54px;
+  border: 1px solid #00B4CC;
+  background: #2196F3;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 50%;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+
+}
   </style>
   </head>
   <body>
@@ -144,14 +194,21 @@
       <a href="#">Rahul Gandhi</a>
       </div>
     </div>
-
     <a href="archive.html">Search through all of Modi's tweets</a>
+
 
 
 
   </div>
 
-
+  <div class="wrap">
+     <div class="search">
+        <input type="text" class="searchTerm" placeholder="What you want to look for?">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+       </button>
+     </div>
+  </div>
 
   </body>
 </html>

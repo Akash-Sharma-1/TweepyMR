@@ -18,3 +18,10 @@ Note:
 4. In this proces , ur account might get locked , just unlock it before running the metadata scrapping mechanism.
 
 /PEACE OUT/
+
+
+#Dikshant Sagar [webupdate-2]
+- New Home Page to select different accounts with about section
+- Theme coded to match twitter like colours.
+
+SCREENSHOTS BELOW-

@@ -26,7 +26,9 @@ Note:
 
 SCREENSHOTS BELOW-
 - Home Page
-![Home Page](https://user-images.githubusercontent.com/31593366/51095238-61f06f80-17d9-11e9-8095-32fc2b856bba.png)
+
+![screenshot 2019-01-14 at 8 56 14 am](https://user-images.githubusercontent.com/31593366/51095373-4afe4d00-17da-11e9-9464-f63c82435f35.png)
 
 - Modi's Page
-![Modi's Page](https://user-images.githubusercontent.com/31593366/51095239-61f06f80-17d9-11e9-8606-f906294c2f69.png)
+
+![screenshot 2019-01-14 at 8 48 55 am](https://user-images.githubusercontent.com/31593366/51095375-4b96e380-17da-11e9-9b89-ac241fe9bfe1.png)

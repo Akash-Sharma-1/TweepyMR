@@ -25,3 +25,6 @@ Note:
 - Theme coded to match twitter like colours.
 
 SCREENSHOTS BELOW-
+
+![Home Page](https://user-images.githubusercontent.com/31593366/51095238-61f06f80-17d9-11e9-8095-32fc2b856bba.png)
+![Modi's Page](https://user-images.githubusercontent.com/31593366/51095239-61f06f80-17d9-11e9-8606-f906294c2f69.png)

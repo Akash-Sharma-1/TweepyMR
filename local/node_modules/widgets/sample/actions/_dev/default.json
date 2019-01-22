@@ -1,0 +1,14 @@
+{
+	"wireframe": "default",
+	"skin": "default",
+	"title": "just a widget",
+	"widgetBlocks": {
+		"head": [],
+		"header": [],
+		"left": [],
+		"center": [
+			{ "id": "theWidget" },
+		],
+		"footer": []
+	}
+}

@@ -1,0 +1,1 @@
+/* this script belongs to a no-render widget, it shouldnt be here */

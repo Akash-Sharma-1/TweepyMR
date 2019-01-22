@@ -1,0 +1,25 @@
+{
+	"wireframe": "default",
+	"skin": "default",
+	"title": "home page",
+	"widgetBlocks": {
+		"head": [
+		],
+		"header": [
+		],
+		"left": [
+		],
+		"center": [
+			{
+				"id": "firstContent",
+				"widget": "sample",
+				"configs": {
+					"heading": "widget 5",
+					"footing": "the end"
+				}
+			},
+		],
+		"footer": [
+		]
+	}
+}

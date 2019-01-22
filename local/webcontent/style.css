@@ -1,0 +1,45 @@
+
+.b {
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 8%; 
+    transition: all .2s ease-in-out;
+    opacity: 0.9;
+    width: 450px;
+    height: 150px;
+    border-radius: 30px;
+	border-color: #26a4f2;
+	background: none ;
+	border-width: 2px;
+	border-style: solid;
+
+}
+
+.c
+{
+	border-radius: 30px;
+	border-color: #26a4f2;
+	background: none ;
+	margin-top: 70px; 
+	margin-bottom: 50px;
+	border-width: 2px;
+	border-style: solid;
+}
+
+
+.b:hover
+{
+    transform: scale(1.05);
+    opacity:1;
+
+
+}
+
+.main
+{
+	
+	padding-left: 150px;
+	height: 90%;
+	padding-top: 80px;
+}
+

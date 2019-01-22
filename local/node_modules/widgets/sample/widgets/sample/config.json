@@ -1,0 +1,24 @@
+{
+	"description":"Used by unit testing to make sure things work",
+	"configs":[
+		{
+			"name":"heading",
+			"description":"has a description",
+			"default":"This is a sample"
+		},
+		{
+			"name":"footing",
+			"description":"",
+			"default":""
+		},
+		{
+			"name":"content"
+		},
+		{
+			"name":"pageNo"
+		},
+		{
+			"name":"pageSize"
+		}
+	]
+}

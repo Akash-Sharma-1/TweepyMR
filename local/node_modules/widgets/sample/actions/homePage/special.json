@@ -1,0 +1,29 @@
+{
+	"extends": "homePage:default",
+	"skin": "nifty",
+	"title": "special home page",
+	"widgetBlocks": {
+		"head": [
+			{
+				"id": "reqSomeScripts",
+				"widget": "testScript/hasMultipleDependencies",
+			},
+		],
+		"header": [
+			{
+				"id": "iDontRender",
+				"widget": "testLogic/alwaysNoRender",
+			},
+		],
+	},
+	"replaceWidgets": [
+		{
+			"id": "firstContent",
+			"widget": "sample",
+			"configs": {
+				"heading": "widget 5",
+				"content": "this is a special page"
+			}
+		}
+	]
+}

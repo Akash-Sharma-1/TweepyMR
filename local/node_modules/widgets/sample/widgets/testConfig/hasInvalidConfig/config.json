@@ -1,0 +1,26 @@
+{
+	"configs":[
+		{
+			"name":"heading",
+			"description":"has a description",
+			"default":"This is a sample"
+		},
+		{
+			"name":"footing",
+			"description":"",
+			"default":"end of sample"
+		},
+		{
+			"name":"content",
+			"default":"hello world"
+		},
+		{
+			"name":"emptyDefault",
+			"description":"I have a description",
+			"default":""
+		},
+		{
+			"name":"undefinedDefault",
+		},
+	// missing ]
+}

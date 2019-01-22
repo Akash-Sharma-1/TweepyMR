@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		title= title
+		if (cssUrl)
+			link(rel="stylesheet/less", type="text/css", href=cssUrl)
+		each widget in widgetBlocks.head
+			!= widgets[widget.id].html
+	body
+		div.pageContainer
+			if widgetBlocks.header && widgetBlocks.header.length > 0
+				div.pageHeader
+					each widget in widgetBlocks.header
+						!= widgets[widget.id].html
+			div.pageMiddle
+				if widgetBlocks.left && widgetBlocks.left.length > 0
+					div.pageLeft
+						each widget in widgetBlocks.left
+							!= widgets[widget.id].html
+				if widgetBlocks.center && widgetBlocks.center.length > 0
+					div.pageCenter
+						each widget in widgetBlocks.center
+							!= widgets[widget.id].html
+				if widgetBlocks.right && widgetBlocks.right.length > 0
+					div.pageRight
+						each widget in widgetBlocks.right
+							!= widgets[widget.id].html
+			if widgetBlocks.footer && widgetBlocks.footer.length > 0
+				div.pageFooter
+					each widget in widgetBlocks.footer
+						!= widgets[widget.id].html
+		if jsUrl
+			script(src=jsUrl)

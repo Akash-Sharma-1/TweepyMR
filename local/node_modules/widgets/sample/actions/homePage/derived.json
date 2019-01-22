@@ -1,0 +1,9 @@
+{
+	"extends": "special",
+	"title": "derived homePage",
+	"widgetBlocks": {
+		"header": [
+			{ "widget": "testRender/hasHtmlTemplateOnly" },
+		],
+	}
+}

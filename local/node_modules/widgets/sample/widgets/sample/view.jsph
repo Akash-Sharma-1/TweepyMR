@@ -1,0 +1,8 @@
+<div class="widget sample jsph">
+<?	if (vars.heading) { ?>
+	<h2 class="widgetHeader"><?= vars.heading ?>
+<?	} ?>
+	<div class="widgetContent"><?= vars.content ?></div>
+<?	if (vars.footing) { ?>
+	<div class="widgetFooter"><?= vars.footing ?></div>
+<?	} ?>

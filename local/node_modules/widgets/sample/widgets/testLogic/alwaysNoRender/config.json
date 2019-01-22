@@ -1,0 +1,3 @@
+{
+	"requires":["testScript/hasScriptNoDependency"]
+}

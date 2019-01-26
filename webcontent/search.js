@@ -2,6 +2,7 @@ var key;
 
 $("#submit").click(function()
 {
+	
 
 	key=$("#key").val();
 	var k=key.toLowerCase();
@@ -24,6 +25,11 @@ $("#submit").click(function()
 
 	//var firebase = require("firebase");
 	
+	var bd=document.getElementById('body');
+	var load=document.createElement('div');
+	load.className='loader';
+	bd.appendChild(load);
+
 	var config = {
 
 		apiKey : "AIzaSyDgYF1UYJkaNfc62sk2VjYaoXnJ3-V1AfE",
@@ -41,6 +47,9 @@ $("#submit").click(function()
 	
 		ref.on('value',function(data)
 		{
+			
+
+
 			var val=data.key;
 			var len=data.numChildren();
 			
@@ -103,6 +112,8 @@ $("#submit").click(function()
 
 			}
 			
+			
+			bd.removeChild(load);
 			
 		});
 		

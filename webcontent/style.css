@@ -49,3 +49,14 @@
 	margin-left: 470px;
 	
 }
+.s
+{
+	border-radius: 30px;
+	border-color: white;
+	padding: 7px;
+	background: none ;
+	border-width: 2px;
+	border-style: solid;
+	cursor: pointer;
+
+}

@@ -72,8 +72,14 @@ $("#submit").click(function()
 			var url2="?ref_src=twsrc%5Etfw'></a>";
 			if(l>=1)
 			{
+				var o=document.createElement('div');
+				o.className="card bg-light";
+				o.innerHTML="<div class='c' style='width: 30%; margin-left: 500px; text-align: center;'><h1 style='color: 26a4f2; '>Search Results</h1></div>";
+				var body=document.getElementById('body');
+				body.appendChild(o);
 				for(var i=0;i<l;i++)
 				{	
+						
 						var d=document.createElement('div');
 						d.className='t';
 						var b=document.createElement('blockquote');

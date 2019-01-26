@@ -46,21 +46,29 @@
 		      </div>
 		  </ul>
 	</nav>
-	<div class="card bg-light" style=" margin: 100px; padding: 100px; text-align: center;">
+	<div class="card bg-light" style=" margin: 100px; padding: 100px; text-align: center; margin-bottom: 50px;">
 		 <h1 align="left"> Enter KeyWord</h1>
 		<form class="form-inline" role="form">
 			
 		    <input type="text" class="form-control mb-2 mr-sm-2" id="key" placeholder="KeyWord to Search Archive" style="width: 80%;">    
-		  <button type="button" class="btn btn-outline-primary mb-2" onclick="click()" id="submit" >Submit</button>
-		  <a href="search.html"><button type="button" class="btn-success mb2" style="padding: 6px; margin: 10px; height: 45px;"><h3 class="fas fa-sync-alt"></h3></button></a>
+		  <button type="button" class="btn btn-outline-primary mb-2 " onclick="this.disabled=true;click();" id="submit">Submit</button>
+		  <a href="search.html"><button  class="btn btn-outline-primary mb2" style=" margin-left: 10px; height: 45px;"><h3 class="fas fa-sync-alt"></h3></button></a>
 	  </form>
 	</div>
 	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	
-	<div class="card bg-light">
-		<div class="c" style="width: 30%; margin-left: 500px; text-align: center;"><h1 style="color: 26a4f2; ">Search Results</h1></div>
-	</div>
 	<script type="text/javascript" src="search.js"></script>
+	
+<!--footer-->
+	<div style="position: fixed;
+	   left: 0;
+	   bottom: 0;
+	   width: 100%;
+	   height: 50px;">
 
+	      		
+		<p class="text-primary"style="text-align: left; margin-left: 50px;"><button type="button" class="btn btn-outline-primary text-primary disabled">©All rights reserved | Made with <i class="fas fa-heart"></i> by <strong>IIIT Delhi</strong></button></p>
+
+	</div>
 </body>
 </html>

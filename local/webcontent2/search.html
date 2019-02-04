@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Search</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/ media="all">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-database.js"></script>
+	<script type="text/javascript" src="search.js"></script>
+	
+</head>
+<body id='body'>
+	<nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: 26a4f2;">
+		  <ul class="navbar-nav">
+		  	<li class="nav-item active">
+		  		<a class="nav-link" href="index.html"><h5><b class="fas fa-home"></b></h5></a>
+		  	</li>
+		    <li class="nav-item active">	
+		      <a class="nav-link" href="modi.html"><h5>Modi's Twitter Archive &nbsp;<b class="fab fa-twitter"></b></h5></a>
+		    </li>
+		    <li class="nav-item dropdown">
+		      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="margin-left: 30px;">
+		        Collections
+		      </a>
+		      <div class="dropdown-menu">
+		        <a class="dropdown-item" href="gst.html">GST</a>
+		        <a class="dropdown-item" href="demonet.html">Demonetisation</a>
+		        <a class="dropdown-item" href="talaq.html">Tripple Talaq</a>
+		        <a class="dropdown-item" href="congress.html">Congress</a>
+		        <a class="dropdown-item" href="rgandhi.html">Rahul Gandhi</a>
+		      </div>
+		    </li>
+			<li>
+			<li class="nav-item dropdown">
+		      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+		        Additional Archives
+		      </a>
+		      <div class="dropdown-menu">
+		        <a class="dropdown-item" href="#">Rahul Gandhi</a>
+		        <a class="dropdown-item" href="#">Arvind Kejriwal</a>
+		        <a class="dropdown-item" href="#">Dr. Manmohan Singh</a>
+		        <a class="dropdown-item" href="#"> Sonia Gandhi</a>
+		      </div>
+		  </ul>
+	</nav>
+	<div class="card bg-light" style=" margin: 100px; padding: 100px; text-align: center;">
+		 <h1 align="left"> Enter KeyWord</h1>
+		<form class="form-inline" role="form">
+			
+		    <input type="text" class="form-control mb-2 mr-sm-2" id="key" placeholder="KeyWord to Search Archive" style="width: 80%;">    
+		  <button type="button" class="btn btn-outline-primary mb-2" onclick="click()" id="submit" ><h5>Submit</h5></button>
+		  <a href="search.html"><button type="button" class="btn-success mb2" style="padding: 6px; margin: 10px; height: 45px;"><h3 class="fas fa-sync-alt"></h3></button></a>
+	  </form>
+	</div>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	
+	<div id='body' class="card bg-light">
+		<div class="c" style="width: 30%; margin-left: 500px; text-align: center;"><h1 style="color: 26a4f2; ">Search Results</h1></div>
+	</div>
+	<script type="text/javascript" src="search.js"></script>
+
+</body>
+</html>

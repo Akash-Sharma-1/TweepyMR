@@ -1,23 +1,21 @@
 
-.b {
-    margin-top: 20px;
-    border-radius: 30px;
-    padding: 8%; 
-    transition: all .2s ease-in-out;
-    opacity: 0.9;
-    width: 450px;
-    height: 350px;
-    border-radius: 30px;
-	border-color: #718cab;
-	background: none ;
-	border-width: 2px;
-	border-style: solid;
-
+#b
+{
+	
+	padding-top: 20%;
+	padding-left: 25%;
+	padding-bottom: 20%; 
+	margin:2%;
+	display: inline-block;
+	width: 90%;
+	height: 50%;
+	text-align: center;
+	border-radius: 10px;
 }
 
 .c
 {
-	border-radius: 30px;
+	border-radius: 10px;
 	border-color: #718cab;;
 	background: none ;
 	margin-top: 70px; 
@@ -27,7 +25,7 @@
 }
 
 
-.b:hover
+#b:hover
 {
     transform: scale(1.05);
     opacity:1;
@@ -53,7 +51,7 @@
 }
 .s
 {
-	border-radius: 30px;
+	border-radius: 10px;
 	border-color: white;
 	padding: 7px;
 	background: none ;

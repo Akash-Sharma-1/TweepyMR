@@ -41,29 +41,17 @@ def mergeSort(arr,l,r):
 		mergeSort(arr,m+1,r)
 		merge(arr,l,m,r)
 
-path="narendramodi_short.json"
-file=open(path,'r')
-file=file.read()
-j=json.loads(file)
 firebase=firebase.FirebaseApplication('https://tweepy-7845f.firebaseio.com/',None)
-result=firebase.get('/Most_Used_Words_Modi/0',None)
-result=json.loads(result)
-print(result)
+print("Fetching DB...")
+result=firebase.get('/Tweets',None)
+print("DB fetched")
 recentWords={}
-tweets={}
-for i in range(len(j)):
-	blob=TextBlob(j[i].get("text"))
-	# d=blob.np_counts
-	# for word in d.keys():
-	# 	if word not in recentWords:
-	# 		recentWords[word]=1
-	# 	else:
-	# 		recentWords[word]=recentWords[word]+1
-
+print("Analysing DB...")
+for i in range(len(result)):
+	blob=TextBlob(result[i].get("text"))
 	d=blob.tags
 	for t in range(len(d)):
 		if(len(d[t][0]))>2 and d[t][0].isalpha():
-			#if detect(d[t][0])!='hi':
 			if d[t][1]=='NNP':
 				if d[t][0] not in recentWords:
 					recentWords[d[t][0]]=1
@@ -72,23 +60,21 @@ for i in range(len(j)):
 
 wordsToBeSearched=[]
 for key in recentWords.keys():
-	if(recentWords[key]>10):
+	if(recentWords[key]>=10):
 		data={}
 		data['word']=key
 		data['count']=recentWords[key]
 		wordsToBeSearched.append(data)
+print("Analysis done")
+print(str(len(wordsToBeSearched))+" words")
 
+print("Sorting words...")
 mergeSort(wordsToBeSearched,0,len(wordsToBeSearched)-1)
+print("Done sorting")
 jsonString=json.dumps(wordsToBeSearched)
-print(jsonString)
+print("Uploading to firebase...")
 firebase.put('/','Most_Used_Words_Modi/0',jsonString)
-# print(wordsToBeSearched)
-# print(len(wordsToBeSearched))
-# with open('out.txt','w') as f:
-# 	for word in wordsToBeSearched:
-# 		f.write("%s\n" % word)
-# 	total=len(wordsToBeSearched)
-# 	f.write("%s\n"%total)
+print("Done uploading")
 
 
 
